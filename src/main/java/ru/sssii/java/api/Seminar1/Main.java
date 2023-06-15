@@ -7,7 +7,54 @@ public class Main {
 //        task1();
 //        task2();
 //        task3();
-        task4();
+//        task4();
+//        task5();
+        task6();
+
+    }
+
+
+    /**
+     * Задан массив nums. Мы определяем текущую сумму массива как runningSum[i] = sum(nums[0]…nums[i]).
+     *
+     * Возвращает текущую сумму nums.
+     */
+    private static void task6() {
+        int arr[] = {1,2,3,4};
+        int[] res = sumNumbers(arr);
+        for (int n:res
+             ) {
+            System.out.print(n + ", ");
+        }
+    }
+
+    private static int[] sumNumbers(int[] array) {
+        for (int i = 1; i <array.length ; i++) {
+            array[i] += array[i-1];
+        }
+        return array;
+    }
+
+    /**
+     * Дан массив целых чисел. Верно ли, что массив является симметричным.
+     */
+    private static void task5() {
+        int arr[] = {1, 2, 3, 4, 5, 4, 3, 2, 1};
+        System.out.println("polindrom(arr) = " + polindrom(arr));
+    }
+
+    /**
+     *
+     * @param arr - массив целых чисел
+     * @return Симметричен или нет
+     */
+    private static String polindrom(int[] arr) {
+        for (int i = 0; i < arr.length / 2; i++) {
+            if (arr[i] != arr[arr.length - i-1]) {
+                return "Не симметричен!";
+            }
+        }
+        return "Симметричен!";
     }
 
     private static void task4() {
@@ -43,8 +90,8 @@ public class Main {
             result = k % 2 + result;
             k /= 2;
         }
-        if(k==1){
-            result = k%2 + result;
+        if (k == 1) {
+            result = k % 2 + result;
         }
         return result;
     }
