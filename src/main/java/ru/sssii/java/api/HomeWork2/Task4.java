@@ -14,7 +14,7 @@ public class Task4 {
                 new int[]{0, 0, 0, 0, 8, 0, 0, 7, 9}};
         var res = Fill(board);
         Print(board);
-        System.out.printf("res: %b\n", res);
+//        System.out.printf("res: %b\n", res);
     }
 
     static void Print(int[][] board) {
