@@ -5,7 +5,6 @@ import java.util.*;
 import static java.lang.Math.abs;
 import static java.util.Collections.max;
 import static java.util.Collections.min;
-import static java.util.Collections.sort;
 
 public class Task4 {
 
@@ -28,10 +27,9 @@ public class Task4 {
     }
 
     /**
-     *
      * @param arrayList Коллекция целых чисел
-     * @param maxN Максимальное число коллекции
-     * @param minN Минимальное число колекции
+     * @param maxN      Максимальное число коллекции
+     * @param minN      Минимальное число колекции
      * @return Среднее число коллекции
      */
     private static int averageNumber(List<Integer> arrayList, int maxN, int minN) {
@@ -43,7 +41,7 @@ public class Task4 {
         }
         int minMediana = min(mediana);
         for (int i = 0; i < mediana.size(); i++) {
-            if(minMediana==abs(arrayList.get(i)-medianaMX)){
+            if (minMediana == abs(arrayList.get(i) - medianaMX)) {
                 indexAverageNumber = i;
             }
         }
@@ -51,7 +49,6 @@ public class Task4 {
     }
 
     /**
-     *
      * @param size Длина создаваемой коллекции
      * @return Коллекцию чисел
      */

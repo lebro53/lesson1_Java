@@ -13,7 +13,7 @@ public class Cube {
     private String material;
 
 
-    public Integer volumeCube(){
-        return size*size*size;
+    public Integer volumeCube() {
+        return size * size * size;
     }
 }

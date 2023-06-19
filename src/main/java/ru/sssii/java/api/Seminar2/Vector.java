@@ -41,22 +41,22 @@ public class Vector {
     }
 
     public double cosVector(Vector vector2) {
-        return scalar(vector2)/abs(vectorLength()*vector2.vectorLength());
+        return scalar(vector2) / abs(vectorLength() * vector2.vectorLength());
     }
 
     public Vector sumVector(Vector vector2) {
         return new Vector(
-                x+vector2.x,
-                y+vector2.y,
-                z+vector2.z
+                x + vector2.x,
+                y + vector2.y,
+                z + vector2.z
         );
     }
 
     public Vector diffVector(Vector vector2) {
         return new Vector(
-                x-vector2.x,
-                y-vector2.y,
-                z-vector2.z
+                x - vector2.x,
+                y - vector2.y,
+                z - vector2.z
         );
     }
 }

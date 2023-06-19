@@ -2,7 +2,6 @@ package ru.sssii.java.api.Seminar3.Task2;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 /**
  * Определить стипендии студентов, фамилии которых заканчиваются на «ова», при четной сумме баллов.

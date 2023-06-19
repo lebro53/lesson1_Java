@@ -15,5 +15,4 @@ public class Book {
     public Integer quantityPaper;
 
 
-
 }

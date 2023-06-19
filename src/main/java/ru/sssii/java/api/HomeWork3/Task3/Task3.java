@@ -28,7 +28,7 @@ public class Task3 {
         for (int i = 0; i < bookList.size(); i++) {
             if (primeTest(bookList.get(i).getQuantityPaper()) &&
                     bookList.get(i).getSecondName().toLowerCase().contains("а") &&
-                    bookList.get(i).getBookYear() >= years){
+                    bookList.get(i).getBookYear() >= years) {
                 nameBookList.add(bookList.get(i).getNameBook());
             }
 

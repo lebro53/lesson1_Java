@@ -1,9 +1,6 @@
 package ru.sssii.java.api.HomeWork3.Task2;
 
-import ru.sssii.java.api.Seminar3.Task1.Item;
-
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.Scanner;
 
@@ -27,14 +24,14 @@ public class Task2 {
     private static List<String> searchProduct(List<Product> prodList, String srchVariety) {
         List<String> searchList = new ArrayList<>();
 
-        int minPrice = prodList.get(0).getPrice();;
+        int minPrice = prodList.get(0).getPrice();
         for (int i = 0; i < prodList.size(); i++) {
-            if(minPrice>=prodList.get(i).getPrice()){
+            if (minPrice >= prodList.get(i).getPrice()) {
                 minPrice = prodList.get(i).getPrice();
             }
         }
         for (int i = 0; i < prodList.size(); i++) {
-            if(prodList.get(i).getVariety().equals(srchVariety) && prodList.get(i).getPrice()==minPrice){
+            if (prodList.get(i).getVariety().equals(srchVariety) && prodList.get(i).getPrice() == minPrice) {
                 searchList.add(prodList.get(i).getName());
             }
         }

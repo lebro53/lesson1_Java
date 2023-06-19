@@ -9,10 +9,10 @@ public class Task3 {
      * 1,-2,22,-3,33,-4,44,-5
      */
     public static void main(String[] args) {
-        int[] arr = {1,-2,22,-3,33,-4,44,-5, 10,-22};
-        int[] swapElemArray = swapNegativeElem(arr,sumIndexTwoDigitsElem(arr));
-        for (int n:swapElemArray
-             ) {
+        int[] arr = {1, -2, 22, -3, 33, -4, 44, -5, 10, -22};
+        int[] swapElemArray = swapNegativeElem(arr, sumIndexTwoDigitsElem(arr));
+        for (int n : swapElemArray
+        ) {
             System.out.print(n + " ");
         }
 
@@ -20,7 +20,7 @@ public class Task3 {
 
     private static int[] swapNegativeElem(int[] array, int sumIndexTwoDigitsArray) {
         for (int j = 0; j < array.length; j++) {
-            if(array[j]<0){
+            if (array[j] < 0) {
                 array[j] = sumIndexTwoDigitsArray;
             }
         }
@@ -30,7 +30,7 @@ public class Task3 {
     private static int sumIndexTwoDigitsElem(int[] array) {
         int sumIndex = 0;
         for (int i = 0; i < array.length; i++) {
-            if(array[i] < 100 && abs(array[i]/10)>0){
+            if (array[i] < 100 && abs(array[i] / 10) > 0) {
                 sumIndex += i;
             }
         }

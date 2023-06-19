@@ -54,7 +54,7 @@ public class Task1 {
             Integer volume = cs.nextInt();
             System.out.println("country:");
             String country = cs.next();
-            Item item = new Item(name, volume,country);
+            Item item = new Item(name, volume, country);
             resultList.add(item);
         }
         return resultList;

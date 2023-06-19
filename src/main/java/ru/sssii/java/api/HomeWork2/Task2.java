@@ -21,21 +21,17 @@ public class Task2 {
     }
 
     private static boolean ascendingCheck(int quantity, Scanner cs) {
-        boolean[] checkFlag = new boolean[quantity-1];
+        boolean[] checkFlag = new boolean[quantity - 1];
         System.out.println("Enter a number");
         int firstNumber = cs.nextInt();
-        for (int i = 0; i < quantity-1; i++) {
+        for (int i = 0; i < quantity - 1; i++) {
             System.out.println("Enter a number");
             int number = cs.nextInt();
-            if (number >= firstNumber) {
-                checkFlag[i] = true;
-            } else {
-                checkFlag[i] = false;
-            }
+            checkFlag[i] = number >= firstNumber;
             firstNumber = number;
         }
         for (int i = 0; i < checkFlag.length; i++) {
-            if(checkFlag[i] == false){
+            if (!checkFlag[i]) {
                 return false;
             }
         }

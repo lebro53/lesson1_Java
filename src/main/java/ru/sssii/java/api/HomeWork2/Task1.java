@@ -21,8 +21,9 @@ public class Task1 {
 
     /**
      * Суммирование простых чисел последовательности
+     *
      * @param numbers длина последовательности
-     * @param cs Сканер для получения значений последовательности
+     * @param cs      Сканер для получения значений последовательности
      * @return Сумму простых чисел
      */
     private static int sumPrimeNUmber(int numbers, Scanner cs) {
@@ -30,7 +31,7 @@ public class Task1 {
         for (int i = 0; i < numbers; i++) {
             System.out.println("Enter a number: ");
             int number = cs.nextInt();
-            if(primeTest(number)){
+            if (primeTest(number)) {
                 sumNumbers += number;
             }
         }
@@ -39,6 +40,7 @@ public class Task1 {
 
     /**
      * Проверка числа на простоту
+     *
      * @param number Число проверка которого покажет простое или нет
      * @return Простое число или нет
      */
