@@ -9,7 +9,11 @@ public class Task2 {
         System.out.println("isValid(s) = " + isValid(s));
     }
 
-
+    /**
+     *
+     * @param s Строка состоящая из скобочек
+     * @return Тру или фолс в зависимости от порядка расположения скобочек
+     */
     public static boolean isValid(String s) {
         HashMap<Character, Character> symbol = new HashMap<>();
         symbol.put(')','(');
@@ -29,7 +33,5 @@ public class Task2 {
             }
         }
         return stack.isEmpty();
-
     }
-
 }

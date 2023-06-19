@@ -7,12 +7,6 @@ import java.util.Stack;
 
 public class Task1 {
     public static void main(String[] args) {
-        //Вывести список на экран в перевернутом виде (без массивов и ArrayList)
-        //Пример:
-        //1 -> 2->3->4
-        //Вывод:
-        //4->3->2->1
-
         LinkedList<Integer> myList = new LinkedList<>(Arrays.asList(1, 2, 3, 4, 5));
         System.out.println("myList = " + myList);
 //        res1(myList);
@@ -25,6 +19,10 @@ public class Task1 {
 
     }
 
+    /**
+     *
+     * @param myList Список, который необходимо перевернуть
+     */
     private static void res6(LinkedList<Integer> myList) {
         for (int i = myList.size(); i > 0 ; i--) {
             int n = (myList.pop());
@@ -32,6 +30,11 @@ public class Task1 {
         }
     }
 
+    /**
+     *
+     * @param myList Список, который необходимо перевернуть
+     * @return Возвращает стэк
+     */
     private static Stack<Integer> res5(LinkedList<Integer> myList) {
         Stack<Integer> myStack = new Stack<>();
         for (int i = 0; i < myList.size(); i++) {
@@ -40,6 +43,11 @@ public class Task1 {
         return myStack;
     }
 
+    /**
+     *
+     * @param myList Список, который необходимо перевернуть
+     * @return Возвращает перевернутый список
+     */
     private static LinkedList<Integer> res4(LinkedList<Integer> myList) {
         for (int i = 0; i < myList.size() / 2; i++) {
             Integer temp = myList.get(i);
@@ -49,7 +57,11 @@ public class Task1 {
         return myList;
     }
 
-
+    /**
+     *
+     * @param myList Список, который необходимо перевернуть
+     * @return Возвращает перевернутый список
+     */
     private static LinkedList<Integer> res3(LinkedList<Integer> myList) {
         LinkedList<Integer> newList = new LinkedList<>();
         for (int i = myList.size() - 1; i >= 0; i--) {
@@ -58,6 +70,11 @@ public class Task1 {
         return newList;
     }
 
+    /**
+     *
+     * @param myList Список, который необходимо перевернуть
+     * @return Возвращает перевернутый список
+     */
     private static LinkedList<Integer> res2(LinkedList<Integer> myList) {
         LinkedList<Integer> newList = new LinkedList<>();
         for (int i = 0; i < myList.size(); i++) {
@@ -66,6 +83,11 @@ public class Task1 {
         return newList;
     }
 
+    /**
+     *
+     * @param myList Список, который необходимо перевернуть
+     * Возвращает перевернутый список
+     */
     private static void res1(LinkedList<Integer> myList) {
         Collections.reverse(myList);
     }
