@@ -63,6 +63,7 @@ public class Main {
 
     private static List<Notebook> filterNotebook(List<Notebook> ctlg, Scanner sc) {
         List<Notebook> myList = new ArrayList<>();
+        System.out.println(new Text().menuEnter);
         System.out.println(new Text().searchPart);
         int partSearch = sc.nextInt();
         switch (partSearch) {

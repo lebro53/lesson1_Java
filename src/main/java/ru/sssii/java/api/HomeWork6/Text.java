@@ -12,6 +12,7 @@ public class Text {
     public String searchElem = "Enter a value";
     public String notFound = "Not found";
     public String foundItems = "Found items: ";
+    public String menuEnter = "Select menu: ";
     public String searchPart = "1. Manufacturer\n" +
             "2. RAM\n" +
             "3. VD volume\n" +
