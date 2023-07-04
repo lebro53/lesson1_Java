@@ -14,14 +14,14 @@ public class Task2 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a quantity positions: ");
         int pos = sc.nextInt();
-        List<Product> productList = createArray(pos, sc);
+        List<Pro> proList = createArray(pos, sc);
         System.out.println("Enter search variety: ");
         String searchVariety = sc.next();
-        System.out.println("productList = " + productList);
-        System.out.println("searchProduct(productList, searchVariety) = " + searchProduct(productList, searchVariety));
+        System.out.println("productList = " + proList);
+        System.out.println("searchProduct(productList, searchVariety) = " + searchProduct(proList, searchVariety));
     }
 
-    private static List<String> searchProduct(List<Product> prodList, String srchVariety) {
+    private static List<String> searchProduct(List<Pro> prodList, String srchVariety) {
         List<String> searchList = new ArrayList<>();
 
         int minPrice = prodList.get(0).getPrice();
@@ -38,8 +38,8 @@ public class Task2 {
         return searchList;
     }
 
-    private static List<Product> createArray(int pos, Scanner cs) {
-        List<Product> positionlist = new ArrayList<>();
+    private static List<Pro> createArray(int pos, Scanner cs) {
+        List<Pro> positionlist = new ArrayList<>();
         for (int i = 0; i < pos; i++) {
             System.out.println("Enter name product: ");
             String name = cs.next();
@@ -51,8 +51,8 @@ public class Task2 {
             Integer price = cs.nextInt();
             System.out.println("Enter variety product: ");
             String variety = cs.next();
-            Product product = new Product(name, country, weight, price, variety);
-            positionlist.add(product);
+            Pro pro = new Pro(name, country, weight, price, variety);
+            positionlist.add(pro);
         }
         return positionlist;
 
