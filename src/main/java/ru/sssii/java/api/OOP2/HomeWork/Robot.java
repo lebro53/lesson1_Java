@@ -1,9 +1,9 @@
 package ru.sssii.java.api.OOP2.HomeWork;
 
 public class Robot implements Sport{
-    private String name;
-    private Integer maxJump;
-    private Integer maxRunDistance;
+    private final String name;
+    private final Integer maxJump;
+    private final Integer maxRunDistance;
 
     public Robot(String name, Integer maxJump, Integer maxRunDistance) {
         this.name = name;

@@ -1,10 +1,10 @@
 package ru.sssii.java.api.OOP2.HomeWork;
 
 public class Cat implements Sport{
-    private String name;
+    private final String name;
 
-    private Integer maxJump;
-    private Integer maxRunDistance;
+    private final Integer maxJump;
+    private final Integer maxRunDistance;
 
     public Cat(String name, Integer maxJump, Integer maxRunDistance) {
         this.name = name;
