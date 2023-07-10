@@ -9,7 +9,7 @@ public class Main {
         };
 
         Obstacles[] obstacles = {
-                new Obstacles(new Treadmill(100), new Wall(600)),
+                new Obstacles(new Treadmill(10), new Wall(6)),
                 new Obstacles(new Treadmill(14), new Wall(40))
         };
 
